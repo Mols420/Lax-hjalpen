@@ -1,0 +1,55 @@
+@charset "utf-8"
+body {
+	margin: auto;
+
+	width: 860px;
+	font-family: sans-serif;
+	font-size: 100%
+	}
+	
+section, header, footer {
+	outline: 1px solid red;
+}
+
+header {
+	text-align: center;
+}
+
+.startpage h1 {
+	font-size: 500%;
+}
+
+.tagline {							/*Vi hjälper dig...*/
+	font-size: 120%;
+	padding: 0.5em;
+	border-top: 3px double #00AF64;
+	border-bottom: 3px double #00AF64;
+	margin: 4em 0;
+}
+
+.startpage > section {				/*Alla sections på startsidan*/
+	display: inline-block; 			/*Fast bredd vid sidan av varandra*/
+	width: 20%;
+	margin-right: 6%;
+	vertical-align: top;
+}
+
+.startpage > section:Last-of-type {
+	margin-right:0;				/*<!den sista section ska inte ha ngn högermarginal*/
+	}
+	
+.startpage > section > h2 {		/*alla rubriker i sections*/
+	box-shadow: inset 0 0 20px #007241;
+	border-radius: 50%;
+	margin: 0 0 1em;
+	padding: 2em 0;
+	background-color: #F5F5F5;
+	text-align: center;
+}
+
+footer {
+	display: block;
+	margin-top: 3em;
+	text-align: center;
+	color: #999;
+}
