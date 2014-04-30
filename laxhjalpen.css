@@ -15,3 +15,15 @@ header {
 	text-align: center;
 }
 
+.startpage h1 {
+	font-size: 500%;
+}
+
+.tagline {
+	font-size: 120%;
+	padding: 0,5em;/*Avstånd till kantlinjen under*/
+	border-top: 3px double #00AF64;		/*Dubbel kantlinje ovan text */
+	border-bottom: 3px double #00AF64;
+	margin: 4em 0;						/*Avståndet emellan Vi hjälper... till Vilka vi är..*/
+}
+
