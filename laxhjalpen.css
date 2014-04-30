@@ -27,3 +27,27 @@ header {
 	margin: 4em 0;						/*Avståndet emellan Vi hjälper... till Vilka vi är..*/
 }
 
+.startpage > section {
+	display: inline-block;
+	width: 20%;
+	margin-right: 6%;
+	Vertical-align: top;				/*Ovanlinjer för alla sectioner är rak*/
+}
+	
+.startpage >section:Last-of-type {
+	margin-right: 0;					/*fjärde section får högermarginal 0 för att få plats samma rad*/
+}
+
+.startpage > section > h2 {
+	margin: 0 0 1em;					/*står i ordningen ovankant vänsterkant högerkant*/
+	background-color: #F5F5F5;
+	text-align: center;
+}
+
+footer {
+	display: block;
+	margin-top: 3em;
+	text-align: center;
+	color: #999;
+}
+	
