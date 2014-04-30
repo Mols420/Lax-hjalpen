@@ -50,4 +50,20 @@ footer {
 	text-align: center;
 	color: #999;
 }
+
+.menu a:Link,
+.menu a:visited {
+	text-decoration: none;				/*borttag av färgen på länken vid besök samt ändring av färg*/
+	color: #000;
+}
 	
+.menu a:focus,
+.menu a:hover {
+	text-decoration: underline;			/*Ändring till röd färg när man hovrar*/
+	color: #A62F00;
+}
+
+.menu a:active {
+	text-decoration: underline;
+	color: #FF4900;
+}
