@@ -6,14 +6,19 @@ body {
 		font-family: 'Helvetica Neue', 'Liberation Sans', Calibri, Arial, sans-serif;
 		font-size: 100%
 }
-
+/*
 section, header, footer {
-	outline: 1px red solid;
+	outline: 1px red solid;		
 }
-
+*/									/*Outline som var röda hjälplinjer borttagen var bara till hjälp*/
+									/*under tiden som strukturen drogs upp*/
 header {
 	text-align: center;
-	padding: 20px 0 0;				/*Blankt utrymme allra längst upp*/
+	padding: 20px 0 0;				/*Blankt utrymme allra längst uppsamt nere*/
+}
+
+.startpage > header, .subpage > header {
+	text-align: center;
 }
 
 .startpage .logo {					/*logotypens storlek*/
@@ -26,7 +31,7 @@ header {
 	font-family: 'Merienda One';
 	display: inline-block;			/*Rubriktest flyttas till höger om logotype justeras vertikalt*/
 	margin: 0;						/*Tar bort den inbyggda marginalen */
-	vertical-align: 53%;			/*Bestämmer var i rutan Läxhjälpen ska stå*/
+	vertical-align: 53%;			/*Bestämmer var i rutan Läxhjälpen ska stå i förhållande bilden*/
 	}
 
 h1:first-Letter {
@@ -45,7 +50,7 @@ h1:first-Letter {
 	display: inline-block;
 	width: 20%;
 	margin-right: 6%;
-	Vertical-align: top;				/*Ovanlinjer för alla sectioner är rak*/
+	Vertical-align: top;				/*Overkantslinjer för alla sectioner är rak*/
 }
 	
 .startpage >section:Last-of-type {
@@ -55,11 +60,12 @@ h1:first-Letter {
 .startpage > section > h2 {
 	margin: 0 0 1em;					/*står i ordningen topp  höger/vänster  botten avstånd till txt början*/
 	background-color: #F5F5F5;
-	text-align: center;
+	text-align: center;					/*inset=insida*/
 	box-shadow: inset 0 0 20px #007241;/*gör grön skugga i rektangel 20px=skuggeffekt längst upp i sectionerna*/
 	border-radius: 43%;					/*gör rektangeln till oval ring genom att runda hörnor 50%*/ 
 	font-family: 'Merienda One';
-}
+	padding: 2em 0;						/*h2 rubriken är 2 em ifrån ovanlinjen samt 2 em ifrån texten i boxen*/
+}										/*0 ifrån höger och vänstersidan*/
 
 .hwrap > a {
 		margin-right: 30px;				/*Länken som bilderna ligger i.Marginal mellan bild och rubriktext.*/
@@ -79,15 +85,15 @@ footer {
 	color: #000;
 }
 	
-.menu a:focus,
+.menu a:focus,							/*när man använder tabb-tangenten*/
 .menu a:hover {
-	text-decoration: underline;			/*Ändring till röd färg när man hovrar*/
-	color: #A62F00;
+	text-decoration: underline;			/*Ändring till understrykning samt röd färg när man hovrar*/
+	color: #A62F00;						/*samt när man tabbar*/
 }
 
-.menu a:active {
+.menu a:active {							/*När man klickar på länken blir den understruken samt röd*/
 	text-decoration: underline;
 	color: #FF4900;
 }
 
-
+							

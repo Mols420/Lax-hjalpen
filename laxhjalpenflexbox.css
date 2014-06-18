@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+body {
+		margin: auto;
+		width: 910px;
+		font-family: 'Helvetica Neue', 'Liberation Sans', Calibri, Arial, sans-serif;
+		font-size: 100%;
+		background-color: lightyellow;
+}
+/*
+section, header, footer {
+	outline: 1px red solid;		
+}
+*/									/*Outline som var röda hjälplinjer borttagen var bara till hjälp*/
+									/*under tiden som strukturen drogs upp*/
+
+
+.startpage > header, .subpage > header {
+	text-align: center;
+	padding: 20px 0 0;				/*Blankt utrymme allra längst uppe samt nere*/
+}
+
+.subpage header a {
+	margin: 0 40px 0 0;
+	width: 172px;
+}
+
+.subpage .logo {
+	width: 146px;
+	height: 123px;
+}	
+
+
+.startpage h1, .subpage h1 {
+	display: inline-block;
+	vertical-align: 53%;
+	font-size: 400%;
+	margin: 0;
+	font-family:"Merianda One";
+	color: darkgreen;
+}
+
+.startpage h1:first-letter, .subpage h1:first-letter {
+	color: red;
+}	
+
+.subpage header h1 > span { 
+	color: red;
+}
+	
+.startpage hr, .subpage hr {
+	padding: 0.5em;
+	border-style: double;
+	border-width: 3px;
+	border-color: #00af64 transparent;
+	margin: 2em 0;
+/*	border-top: 3px double darkgreen;
+	border-bottom: 3px double darkgreen;*/
+}
+
+
+
+.subpage nav {
+	flex: 0 1 20%;
+	
+	
+	
+	
+	
+}
+
+.subpage  nav  h2 {
+	margin: 0 0 1em;					/*står i ordningen topp  höger/vänster  botten avstånd till txt början*/
+	background-color: #F5F5F5;
+	text-align: center;					/*inset=insida*/
+	box-shadow: inset 0 0 20px #007241;/*gör grön skugga i rektangel 20px=skuggeffekt längst upp i sectionerna*/
+	border-radius: 43%;					/*gör rektangeln till oval ring genom att runda hörnor 50%*/ 
+	font-family: 'Merienda One';
+	padding: 2em 0;	
+
+}
+
+
+
+div[role="main"] {
+	display: flex;	
+	margin-left:5%;									/*om inte denna rad finns, så lägger sig artiklarna längre ned, i*/ 
+	
+	}										/*linje med Kontaktrubrikens nedre kant*/
+div[role="main"] > article {
+	flex: 0 1 80%;
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	border-bottom: 3px double #00af64;
+	}
+
+
+
+div[role="main"] > figure {
+	flex: 0 1 20%;
+	padding-bottom: 1em;
+	padding-right: 3em;
+	margin-bottom: 2em;
+	border-bottom: 3px double #00af64;
+	}
+	
+	
+.alignleft {
+	text-align: center;
+}
+
+
+
+
+
+div[role="main"] figure > img {
+	width: 128px;
+	height: 128px;
+	
+}	
+
+.faux {
+	background-image: linear-gradient(to right, lime, lime 180px, pink 90px, pink);
+	display: flex;
+	
+}
+
+	
+.sp {
+/*	margin-left: 100px;*/
+	
+}
+
+
+.bildcaption {
+	font: italic bolder 110% sans-serif;
+	font-family: inherit;
+	text-align: center;
+	text-transform: uppercase;
+	color: #666;
+	margin-bottom: 1em;
+}
+.double {
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+footer {
+	clear: both;
+	background-color: lightblue;
+}
+
+.subpage > footer {
+	margin-top: 0;
+	padding: 1.5em;
+	border-top: 3px double #00af64;
+}
+
