@@ -99,7 +99,6 @@ div[role="main"] > article {
 div[role="main"] > figure {
 	flex: 0 1 20%;
 	padding-bottom: 1em;
-	padding-right: 3em;
 	margin-bottom: 2em;
 	border-bottom: 3px double #00af64;
 	}
