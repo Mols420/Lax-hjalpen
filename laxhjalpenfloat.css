@@ -67,14 +67,16 @@ section, header, footer {
 	
 }
 
-.subpage  nav  h2 {
+.subpage nav li {							/*Antingen li eller h2 beroende på vilket man använt i html-koden*/
 	margin: 0 0 1em;					/*står i ordningen topp  höger/vänster  botten avstånd till txt början*/
 	background-color: #F5F5F5;
 	text-align: center;					/*inset=insida*/
 	box-shadow: inset 0 0 20px #007241;/*gör grön skugga i rektangel 20px=skuggeffekt längst upp i sectionerna*/
 	border-radius: 43%;					/*gör rektangeln till oval ring genom att runda hörnor 50%*/ 
 	font-family: 'Merienda One';
-	padding: 2em 0;		
+	padding: 2em 0;	
+	display: block;
+	list-style-type: none;				/*Tar bort punkten före listningen */
 }
 div[role="main"] {
 	margin-left: 22%;					/*om inte denna rad finns, så lägger sig artiklarna längre ned, i*/ 
