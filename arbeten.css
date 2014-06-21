@@ -164,3 +164,67 @@ footer {
 	border-top: 3px double #00af64;
 }
 
+.borderless {
+	border-spacing: 0;
+}
+
+.services {
+	border: 1px solid #d3d3d3;
+	background: #fff;
+	width: 96%;
+	margin: 5% auto 2em;
+	border-radius: 5px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	text-shadow: #fff 1px 1px 1px;
+}
+
+thead {
+	font-size: 150%;
+}
+
+th, td {
+	padding: 18px 28px 18px;
+	text-align: left;	
+}
+
+th {
+	padding-top: 22px;
+	background: #ddd;
+}
+
+td {
+	border-top: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}	
+
+tr:target {
+	background-color: #61d7a4;
+}
+
+tr:hover {
+	background-color: #ff9b73;			/*När man hovrar i tabellen blir den orange*/
+}
+
+tr {
+	transition: background-color 2s;	/*ger en mjukare övergång av färgen vid hovring*/
+}	
+/*
+tr:nth-child(odd) {						denna kod ger grön färg på udda rader
+	background-color: #61d7a4;
+}
+
+tr:nth-child(even) {
+	background-color: #ff9b73;			och orange färg på jämna rader används inte Läxhjälpen PROVADE BARA
+}
+*/
+
+td:nth-child(1) {
+	width: 50px;
+	text-align: left;
+}
+
+td:nth-child(2) {
+	width: 50px;
+	text-align: right;
+	font-family: Consolas, "Lucida Console", Monaco, monospace;
+}
